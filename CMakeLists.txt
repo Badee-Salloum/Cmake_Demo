@@ -1,4 +1,22 @@
 cmake_minimum_required(VERSION 3.13)
 project(cmake-demo)
 
-add_executable(cmake-demo main.cpp)
+# https://doc.qt.io/qt-5/cmake-get-started.html
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
+add_executable(cmake-demo WIN32 main.cpp)
+
+set_target_properties(
+    cmake-demo
+    PROPERTIES
+        AUTOMOC ON
+        AUTORCC ON
+        AUTOUIC ON
+)
+
+target_link_libraries(cmake-demo Qt5::Widgets)
