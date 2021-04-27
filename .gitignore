@@ -522,3 +522,5 @@ FodyWeavers.xsd
 *.tlog
 
 # End of https://www.toptal.com/developers/gitignore/api/cmake,vscode,c++,qt,qtcreator,visualstudio,visualstudiocode,opencv
+
+build/
