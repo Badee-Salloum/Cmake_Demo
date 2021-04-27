@@ -9,7 +9,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-add_executable(cmake-demo WIN32 main.cpp)
+add_executable(cmake-demo WIN32 main.cpp resources.qrc)
+
 
 set_target_properties(
     cmake-demo

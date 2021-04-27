@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<!-- https://doc.qt.io/qt-5/resources.html -->
+<RCC version="1.0">
+    <qresource>
+        <file>images/Qt.png</file>
+    </qresource>
+</RCC>
