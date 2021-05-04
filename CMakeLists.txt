@@ -6,6 +6,9 @@ project(cmake-demo)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# process CMakeLists.txt file located in the AddLib directory
+add_subdirectory(AddLib)
+
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
@@ -20,4 +23,4 @@ set_target_properties(
         AUTOUIC ON
 )
 
-target_link_libraries(cmake-demo Qt5::Widgets)
+target_link_libraries(cmake-demo Qt5::Widgets add-lib)
